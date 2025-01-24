@@ -1,33 +1,93 @@
-# PersonDetails_-.NET-and-SPA-
+<h1>PersonDetails: .NET and SPA Project</h1>
+<p>
+Welcome to the <b>PersonDetails</b> repository! This project combines a .NET Core Web API backend with a simple single-page application (SPA) frontend. The solution is fully containerized for seamless deployment and testing.
+</p>
 
-To pull the solution locally you can run git clone https://github.com/shadyyehia/PersonDetails_-.NET-and-SPA-.git<br/>
+<hr/>
 
-The application was containerized and you will need to have docker on your machine to run it.<br/>
-Steps to launch the project:<br/>
-1- Open cmd in the project folder location and type the command "docker-compose up --build" to start the containers in docker-compose file but to rebuild their images first.<br/>
-2- To check the Backend API swagger https://localhost:2222/swagger<br/>
-3- To check the Frontend page http://localhost:4444<br/>
+<h2>🔧 Getting Started</h2>
 
+<h3>Clone the Repository</h3>
+<p>To pull the solution locally, use the following command:</p>
+<pre>
+<code>git clone https://github.com/shadyyehia/PersonDetails_-.NET-and-SPA-.git</code>
+</pre>
 
-The solution consists of three projects:<br/>
-1- PersonDetails: the backend API, was created using ASP.NET Core web API.<br/>
-PersonDetailsController is the main entry point.<br/>
-Appsettings.json for saving DB configurations.( CSV and MongoDB)<br/>
-self-signed certificate cert.pfx to allow HTTPS over containers.<br/>
+<h3>Prerequisites</h3>
+<ul>
+  <li>Ensure you have <b>Docker</b> installed on your machine.</li>
+  <li>Ensure that Docker Compose is configured correctly.</li>
+</ul>
 
-2- PersonDetails.Tests : this is xUnit project to test the backend API.<br/>
+<hr/>
 
-3- PersonDetailsUI: the frontend project, was implemented using ASP.NET Core Empty template, and added wwwroot to host a single HTML.<br/>
+<h2>🚀 Steps to Launch the Project</h2>
+<ol>
+  <li>
+    Open a terminal in the project folder.
+  </li>
+  <li>
+    Run the following command to build the images and start the containers:
+    <pre><code>docker-compose up --build</code></pre>
+    <p>This command ensures that all images are rebuilt before the containers are started.</p>
+  </li>
+  <li>
+    Access the Backend API Swagger documentation:
+    <a href="https://localhost:2222/swagger" target="_blank">https://localhost:2222/swagger</a>
+  </li>
+  <li>
+    Access the Frontend page:
+    <a href="http://localhost:4444" target="_blank">http://localhost:4444</a>
+  </li>
+</ol>
 
-The HTML was designed using simple CSS styling and plain HTML using Fetch to pull data from the backend API.<br/>
+<hr/>
 
+<h2>📂 Solution Structure</h2>
+<p>The solution consists of three projects:</p>
+<ol>
+  <li>
+    <b>PersonDetails:</b> The backend API, created using ASP.NET Core Web API.
+    <ul>
+      <li><b>PersonDetailsController:</b> The main entry point.</li>
+      <li><b>Appsettings.json:</b> Contains DB configurations (CSV and MongoDB).</li>
+      <li><b>cert.pfx:</b> A self-signed certificate to enable HTTPS in containers.</li>
+    </ul>
+  </li>
+  <li>
+    <b>PersonDetails.Tests:</b> An xUnit project to test the backend API.
+  </li>
+  <li>
+    <b>PersonDetailsUI:</b> The frontend project, implemented using the ASP.NET Core Empty template.
+    <ul>
+      <li>Includes a <code>wwwroot</code> folder hosting a single HTML file.</li>
+      <li>The HTML uses simple CSS styling and Fetch API to interact with the backend.</li>
+    </ul>
+  </li>
+</ol>
 
-The project was containerized into 3 containers : Backend , frontend and Mongo.<br/>
-Mongo container has a configured healthy check to make sure that it should be able to recieve connections before starting the backendAPI container.<br/>
+<hr/>
 
-Design patterns used in Backend API:<br/>
-Facade, Repository, UnitOfWork, Dependency Injection<br/>
+<h2>📦 Containerization</h2>
+<p>
+The project is containerized into three containers:
+</p>
+<ul>
+  <li><b>Backend:</b> Hosts the backend API.</li>
+  <li><b>Frontend:</b> Hosts the SPA.</li>
+  <li><b>Mongo:</b> Hosts the database. It includes a health check to ensure it is ready to accept connections before the backend API container starts.</li>
+</ul>
 
+<hr/>
 
+<h2>🏗️ Design Patterns Used</h2>
+<ul>
+  <li>Facade</li>
+  <li>Repository</li>
+  <li>Unit of Work</li>
+  <li>Dependency Injection</li>
+</ul>
 
-  
+<hr/>
+
+<p>Happy coding! 🎉</p>
