@@ -70,12 +70,12 @@ Welcome to the <b>PersonDetails</b> repository! This project combines a .NET Cor
 
 <h2>📦 Containerization</h2>
 <p>
-The project is containerized into three containers:
+The project is containerized into three containers ( services ):
 </p>
 <ul>
-  <li><b>Backend:</b> Hosts the backend API.</li>
-  <li><b>Frontend:</b> Hosts the SPA.</li>
-  <li><b>Mongo:</b> Hosts the database. It includes a health check to ensure it is ready to accept connections before the backend API container starts.</li>
+  <li><b>persondetails:</b> Hosts the backend API.</li>
+  <li><b>persondetailsui:</b> Hosts the SPA.</li>
+  <li><b>mongo:</b> Hosts mongoDB database. It includes a health check to ensure it is ready to accept connections before the backend API container starts.</li>
 </ul>
 
 <hr/>
