@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "idealrating.Controllers.PersonDetailsController",
+    "Method": "GetPersons",
+    "RelativePath": "PersonDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

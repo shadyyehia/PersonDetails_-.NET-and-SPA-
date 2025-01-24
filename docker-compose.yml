@@ -1,0 +1,40 @@
+services:
+  persondetails:
+    image: ${DOCKER_REGISTRY-}persondetails
+    build:
+      context: PersonDetails
+      dockerfile: Dockerfile
+    ports:
+      - "1010:8080"  #(HTTP)
+      - "2222:8081" #(HTTPS)
+    depends_on:
+      - mongo
+
+  persondetailsui:
+    image: ${DOCKER_REGISTRY-}persondetailsui
+    build:
+      context: PersonDetailsUI
+      dockerfile: Dockerfile
+    ports:
+      - "4444:80"
+    depends_on:
+      - persondetails
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodbb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-initt:/docker-entrypoint-initdb.d  # Mount initialization scripts
+    environment:
+      MONGO_INITDB_DATABASE: PersonDetailsDb  # Default database name
+    healthcheck: # to ensure mongo service is healthy before making connections from backend
+        test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+        interval: 10s
+        timeout: 5s
+        retries: 3
+
+
+volumes:
+  mongo-data: {}

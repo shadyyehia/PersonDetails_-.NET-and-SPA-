@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        #filterInput {
+            border: 2px solid #343a40;
+            border-radius: 4px;
+        }
+
+        #personTable {
+            max-height: 400px;
+            overflow-y: scroll;
+            display: block;
+            border: 1px solid #343a40;
+            border-radius: 4px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-3">Person Details</h2>
+        <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter by first or last name..." oninput="filterTable()">
+        <div id="personTableContainer">
+            <table id="personTable" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Telephone</th>
+                        <th>Address</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody id="personTableBody">
+                    <!-- Data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const apiUrl = 'https://localhost:2222/PersonDetails'; // Update with your actual API endpoint
+
+        async function fetchPersons() {
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch person details');
+                }
+                const data = await response.json();
+                populateTable(data);
+            } catch (error) {
+                alert(error.message);
+                console.error(error);
+            }
+        }
+
+        function populateTable(persons) {
+            const tableBody = document.getElementById('personTableBody');
+            tableBody.innerHTML = ''; // Clear previous rows
+            persons.forEach(person => {
+                const telephone = `+${person["telephone_code"]} ${person["telephone_number"]}`;
+                const row = `<tr>
+                                        <td>${person["first_name"]}</td>
+                                        <td>${person["last_name"]}</td>
+                                        <td>${telephone}</td>
+                                        <td>${person.address}</td>
+                                        <td>${person.country}</td>
+                                     </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function filterTable() {
+            const filter = document.getElementById('filterInput').value.toLowerCase();
+            const rows = document.querySelectorAll('#personTable tbody tr');
+            rows.forEach(row => {
+                const firstName = row.cells[0].textContent.toLowerCase();
+                const lastName = row.cells[1].textContent.toLowerCase();
+                row.style.display = (firstName.includes(filter) || lastName.includes(filter)) ? '' : 'none';
+            });
+        }
+
+        // Fetch data on page load
+        window.onload = fetchPersons;
+    </script>
+</body>
+</html>

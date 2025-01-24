@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\idealrating\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4032D0B4-0E5F-42BD-B5EF-0F4670369BDE}|..\\PersonDetailsUI\\PersonDetailsUI.csproj|c:\\users\\legion\\downloads\\idealrating_webapi\\persondetailsui\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4032D0B4-0E5F-42BD-B5EF-0F4670369BDE}|..\\PersonDetailsUI\\PersonDetailsUI.csproj|c:\\users\\legion\\downloads\\idealrating_webapi\\persondetailsui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618F3134-F779-44B4-9309-C567897F1E01}|PersonDetails.csproj|c:\\users\\legion\\downloads\\idealrating_webapi\\idealrating\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{618F3134-F779-44B4-9309-C567897F1E01}|PersonDetails.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618F3134-F779-44B4-9309-C567897F1E01}|PersonDetails.csproj|c:\\users\\legion\\downloads\\idealrating_webapi\\idealrating\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{618F3134-F779-44B4-9309-C567897F1E01}|PersonDetails.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\PersonDetailsUI\\Dockerfile",
+              "RelativeDocumentMoniker": "..\\PersonDetailsUI\\Dockerfile",
+              "ToolTip": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\PersonDetailsUI\\Dockerfile",
+              "RelativeToolTip": "..\\PersonDetailsUI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-23T13:52:55.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\PersonDetailsUI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "..\\PersonDetailsUI\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\PersonDetailsUI\\wwwroot\\index.html",
+              "RelativeToolTip": "..\\PersonDetailsUI\\wwwroot\\index.html",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-23T13:50:00.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\idealrating\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\idealrating\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T13:38:21.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\idealrating\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\Legion\\Downloads\\idealrating_webapi\\idealrating\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-23T13:36:11.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

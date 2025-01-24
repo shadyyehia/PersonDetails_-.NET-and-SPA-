@@ -1,0 +1,6 @@
+@idealrating_HostAddress = http://localhost:5112
+
+GET {{idealrating_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
