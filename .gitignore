@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug
+/.vs/PersonDetails_App
+/PersonDetails/bin/Debug/net9.0
+/obj
+/PersonDetails.Tests/bin/Debug/net9.0
+/PersonDetails.Tests/obj
+/PersonDetailsUI/.vs
+/PersonDetailsUI/bin/Debug/net9.0
+/PersonDetailsUI/obj
