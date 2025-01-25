@@ -82,7 +82,6 @@ The project is containerized into three containers ( services ):
 
 <h2>🏗️ Design Patterns Used</h2>
 <ul>
-  <li>Facade</li>
   <li>Repository</li>
   <li>Unit of Work</li>
   <li>Dependency Injection</li>
