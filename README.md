@@ -55,7 +55,7 @@ Welcome to the <b>PersonDetails</b> repository! This project combines a .NET Cor
     </ul>
   </li>
   <li>
-    <b>PersonDetails.Tests:</b> An xUnit project to test the backend API. The tests run automatically with every commit.
+    <b>PersonDetails.Tests:</b> An xUnit project to test the backend API.
   </li>
   <li>
     <b>PersonDetailsUI:</b> The frontend project, implemented using the ASP.NET Core Empty template.
